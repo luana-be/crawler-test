@@ -30,14 +30,20 @@ When the Flask app starts, please open another terminal window in order to run c
 
 Available curl commands:
 
-# Posting URLs using 1 single task (you need to specify the number of tasks after the localhost address):
+# Posting URLs using 1 single task 
+Note that you need to specify the number of tasks after the localhost address
+
 curl -X POST http://localhost:8080/1 -H "Content-Type: application/json" -d "[\"http://www.etsmtl.ca/\", \"https://golang.org/\"]"
  
-# Posting URLs using 2 paralell tasks (you can use one task per URL):
+# Posting URLs using 2 paralell tasks:
+Note that you can use one task per URL
+
 curl -X POST http://localhost:8080/2 -H "Content-Type: application/json" -d "[\"http://www.etsmtl.ca/\", \"https://golang.org/\"]"
  
 # Getting the status of a task:
+
 curl -X GET http://localhost:8080/status/c426926b-64df-4417-8cb8-59f719c41ef1
  
 # Getting the result of a task:
+
 curl -X GET http://localhost:8080/result/c426926b-64df-4417-8cb8-59f719c41ef1
