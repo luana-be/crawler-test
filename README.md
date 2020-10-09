@@ -4,7 +4,7 @@ Author: Luana Bezerra Batista
 
 Date: 10-07-2020
 
-With this Python 3 application, you will be able to extract image URLs from a list of base URLs and from their immediate children 
+With this Python application, you will be able to extract image URLs from a list of base URLs and from their immediate children 
 (i.e., until the second level of websites). It employs the following technologies/libraries, among others:
 
 -> Beautiful Soup, as HTML parser
