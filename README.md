@@ -16,13 +16,13 @@ With this Python 3 application, you will be able to extract image URLs from a li
 ############################################################################
 # How to run it:
 
-git clone https://github.com/luana-be/crawler_test.git
+git clone https://github.com/luana-be/crawler-test.git
 
-cd crawler_test
+cd crawler-test
 
-docker build -t crawler_test -f Dockerfile ./
+docker build -t crawler-test -f Dockerfile ./
 
-docker run -p 8080:8080 crawler_test
+docker run -p 8080:8080 crawler-test
 
 ############################################################################
 
