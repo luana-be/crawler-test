@@ -14,7 +14,7 @@ With this Python application, you will be able to extract image URLs from a list
 * concurrent.futures and multiprocessing, for parallel execution
 
 ############################################################################
-# How to run it:
+# How to run it
 
 `git clone https://github.com/luana-be/crawler-test.git`
 
@@ -35,15 +35,15 @@ Available curl commands:
 
 `curl -X POST http://localhost:8080/1 -H "Content-Type: application/json" -d "[\"http://www.etsmtl.ca/\", \"https://golang.org/\"]"`
  
-# Posting URLs using 2 paralell tasks:
+# Posting URLs using 2 paralell tasks
 *Note that you can use one task per URL
 
 `curl -X POST http://localhost:8080/2 -H "Content-Type: application/json" -d "[\"http://www.etsmtl.ca/\", \"https://golang.org/\"]"`
  
-# Getting the status of a task:
+# Getting the status of a task
 
 `curl -X GET http://localhost:8080/status/c426926b-64df-4417-8cb8-59f719c41ef1`
  
-# Getting the result of a task:
+# Getting the result of a task
 
 `curl -X GET http://localhost:8080/result/c426926b-64df-4417-8cb8-59f719c41ef1`
