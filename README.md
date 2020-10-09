@@ -16,13 +16,13 @@ With this Python application, you will be able to extract image URLs from a list
 ############################################################################
 # How to run it:
 
-git clone https://github.com/luana-be/crawler-test.git
+`git clone https://github.com/luana-be/crawler-test.git`
 
-cd crawler-test
+`cd crawler-test`
 
-docker build -t crawler-test -f Dockerfile ./
+`docker build -t crawler-test -f Dockerfile ./`
 
-docker run -p 8080:8080 crawler-test
+`docker run -p 8080:8080 crawler-test`
 
 ############################################################################
 
@@ -33,17 +33,17 @@ Available curl commands:
 # Posting URLs using 1 single task 
 *Note that you need to specify the number of tasks after the localhost address
 
-curl -X POST http://localhost:8080/1 -H "Content-Type: application/json" -d "[\"http://www.etsmtl.ca/\", \"https://golang.org/\"]"
+`curl -X POST http://localhost:8080/1 -H "Content-Type: application/json" -d "[\"http://www.etsmtl.ca/\", \"https://golang.org/\"]"`
  
 # Posting URLs using 2 paralell tasks:
 *Note that you can use one task per URL
 
-curl -X POST http://localhost:8080/2 -H "Content-Type: application/json" -d "[\"http://www.etsmtl.ca/\", \"https://golang.org/\"]"
+`curl -X POST http://localhost:8080/2 -H "Content-Type: application/json" -d "[\"http://www.etsmtl.ca/\", \"https://golang.org/\"]"`
  
 # Getting the status of a task:
 
-curl -X GET http://localhost:8080/status/c426926b-64df-4417-8cb8-59f719c41ef1
+`curl -X GET http://localhost:8080/status/c426926b-64df-4417-8cb8-59f719c41ef1`
  
 # Getting the result of a task:
 
-curl -X GET http://localhost:8080/result/c426926b-64df-4417-8cb8-59f719c41ef1
+`curl -X GET http://localhost:8080/result/c426926b-64df-4417-8cb8-59f719c41ef1`
