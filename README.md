@@ -7,11 +7,11 @@ Date: 10-07-2020
 With this Python application, you will be able to extract image URLs from a list of base URLs and from their immediate children 
 (i.e., until the second level of websites). It employs the following technologies/libraries, among others:
 
--> Beautiful Soup, as HTML parser
+* Beautiful Soup, as HTML parser
 
--> Flask, as a micro web framework
+* Flask, as a micro web framework
 
--> concurrent.futures and multiprocessing, for parallel execution
+* concurrent.futures and multiprocessing, for parallel execution
 
 ############################################################################
 # How to run it:
