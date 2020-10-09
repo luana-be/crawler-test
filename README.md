@@ -1,4 +1,4 @@
-#Web Crawler
+# Web Crawler
 
 Author: Luana Bezerra Batista
 
@@ -14,7 +14,7 @@ With this Python 3 application, you will be able to extract image URLs from a li
 -> concurrent.futures and multiprocessing, for parallel execution
 
 ############################################################################
-#How to run it:
+# How to run it:
 
 git clone https://github.com/luana-be/crawler_test.git
 
